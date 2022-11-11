@@ -1,0 +1,4 @@
+busca x [] = 0
+busca x (y:ys)
+ | x == y = 1
+ |otherwise = busca x ys
