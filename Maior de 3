@@ -1,0 +1,4 @@
+maior(x:[]) = x
+maior(x:y:xs)
+ |x >= y = maior(x:xs)
+ |otherwise = maior(y:xs)
