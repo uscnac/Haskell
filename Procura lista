@@ -1,0 +1,5 @@
+pertence::Int->[Int]->Bool
+pertence x [] = False
+pertence x (y:ys)
+ |x == y = True
+ |otherwise = pertence x ys
