@@ -1,0 +1,3 @@
+ultimo::Int->[Int]->[Int]
+ultimo x [] = [x]
+ultimo x (y:ys) = y : ultimo x ys
