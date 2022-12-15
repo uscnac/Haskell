@@ -1,0 +1,5 @@
+contaimpa::[Int]->Int
+contaimpa [] = 0
+contaimpa (x:xs) 
+ |mod x 2 == 0 = contaimpa xs
+ |otherwise = 1 + contaimpa xs
