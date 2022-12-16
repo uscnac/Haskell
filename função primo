@@ -1,0 +1,8 @@
+teste::Int->Int->Int
+teste x y
+ |x > y = 0
+ |mod y x == 0 = 1 + teste (x+1) y
+ |otherwise = teste
+ 
+primo::Int->Bool
+primo n = (teste 1 n) == 2
